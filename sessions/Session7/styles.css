@@ -1,0 +1,57 @@
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333 
+}
+header{
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+header h1{
+    margin-bottom: 10px;
+}
+header h2{
+    margin-top: 0;
+}
+.bio {
+    padding: 20px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 8px;
+}
+.bio h3 {
+    color: #4CAF50;
+}
+.favorites {
+    padding: 20px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 8px;
+}
+.favorites h3 {
+    color: #4CAF50;
+}
+.favorites ul {
+    list-style-type: none;
+}
+.favorites li {
+    padding: 5px 0;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+}
+footer img {
+    max-width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
