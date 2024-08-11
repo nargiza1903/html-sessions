@@ -13,10 +13,15 @@
     function displayMessage() {
         alert('JavaScript is awesome!');
     }
+    function changeText() {
+        document.getElementById('myText').innerText = 'Text has been changed!';
+    }
   </script>
   </head>
   <body>
     <button onclick="sayHello()">Click Me!</button>
     <button onclick="displayMessage()">Show Message</button>
+    <p id="myText">Original text.</p>
+    <button onclick="changeText()">Change Text</button>
   </body>
   </html>
