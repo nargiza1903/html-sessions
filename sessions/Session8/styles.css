@@ -1,20 +1,30 @@
+/* Reset default margin and padding for common elements */
 body, h1, h2, p, ul {
     margin: 0;
     padding: 0;
 }
-body{
+
+/* Basic body styling */
+body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
+
+/* Header styling */
 header {
     background-color: #4CAF50;
     color: white;
     padding: 20px;
     text-align: center;
 }
+
+/* Navigation styling */
 header nav ul {
     list-style-type: none;
     padding: 0;
@@ -27,27 +37,43 @@ header nav ul li a {
     color: white;
     text-decoration: none;
 }
+
+/* Main content styling */
 main {
+    display: flex;
+    flex: 1;
     margin: 20px 0;
 }
+
+/* Styling for sections and articles within the main content */
 main section, main article {
     background-color: white;
     padding: 20px;
-    margin: 10px 0;
+    margin: 10px;
     border-radius: 8px;
+    flex: 1;
 }
+
+/* Header styling within sections and articles */
 main section h2, main article h2 {
     color: #4CAF50;
 }
+
+/* Aside styling */
 aside {
     background-color: #e0f7fa;
     padding: 20px;
-    margin: 10px 0;
+    margin: 10px;
     border-radius: 8px;
+    width: 250px; /* Set a fixed width for the aside */
 }
+
+/* Header styling within aside */
 aside h2 {
     color: #00796b;
 }
+
+/* List styling within aside */
 aside ul {
     list-style-type: none;
     padding: 0;
@@ -55,6 +81,8 @@ aside ul {
 aside ul li {
     padding: 5px 0;
 }
+
+/* Footer styling */
 footer {
     background-color: #4CAF50;
     color: white;
