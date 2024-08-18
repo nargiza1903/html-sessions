@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        /* Basic styling for the gallery */
+        #main-image {
+            width: 600px;
+            height: 400px;
+            border: 2px solid #ddd;
+        }
+        .thumbnail {
+            width: 100px;
+            height: 75px;
+            margin: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>New Zealand</h1>
+    <div>
+        <img id="main-image" src="../img/new.jpg" alt="Main Image">
+    </div>
+    <div>
+        <img class="thumbnail" src="../img/ze.jpg" alt="Thumbnail 1">
+        <img class="thumbnail" src="../img/ala.webp" alt="Thumbnail 2">
+        <img class="thumbnail" src="../img/nd.jpg" alt="Thumbnail 3">
+        <img class="thumbnail" src="../img/new.jpg" alt="Thumbnail 4">
+    </div>
+
+    <script src="gallery.js"></script>
+</body>    
