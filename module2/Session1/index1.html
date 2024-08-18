@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Types</title>
+</head>
+<body>
+    <button id="clickButton">Click me!</button>
+    <p id="message"></p>
+    <script>
+        const button = document.getElementById('clickButton');
+        const message = document.getElementById('message');
+        button.addEventListener('click', function() {
+            message.textContent = 'Button clicked!';
+        });
+    </script>
+</body>
+</html>

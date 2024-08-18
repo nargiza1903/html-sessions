@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Basics</title>
+  <script>
+    let greeting = 'Hello, ';
+    let userName = 'Alice';
+    let age = 15;
+
+    function greetUser() {
+      alert(greeting + userName + '!');
+    }
+
+    function showAge() {
+      alert('You are ' + age + ' years old.');
+    }
+    let fruits = ['banana', 'orange', 'peach'];
+
+    function showFavoriteFruit() {
+        alert('Favorite fruit: ' + fruits[0]); // 'apple'
+    }
+  </script>
+</head>
+<body>
+  <button onclick="greetUser()">Greet User</button>
+  <button onclick="showAge()">Show Age</button>
+  <button onclick="showFavoriteFruit()">Show Favorite Fruit</button>
+</body>
+</html>

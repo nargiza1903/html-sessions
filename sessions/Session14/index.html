@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First JavaScript</title>
+  <script>
+    let message = 'Welcome to JavaScript!';
+    const pi = 3.14159;
+
+    function displayMessage() {
+        alert(message);
+    }
+
+    function showPi() {
+        alert('The value of pi is');
+    }
+    let name = 'Alica';
+    let age = 12;
+    let isStudent = true;
+
+    function displayInfo() {
+        alert('Name: ' + name + ', Age: ' + age + ', Student: ' + isStudent);
+    }
+    let colors = ['red', 'blue', 'green'];
+    let person = { name: 'Alica', age: 12 };
+
+    function showPersonInfo() {
+        alert('Name: ' + person.name + ', Age: ' + person.age);
+    }
+  </script>
+</head>
+<body>
+    <button onclick="displayMessage()">Display Message</button>
+    <button onclick="showPi()">show Pi</button>
+    <button onclick="displayInfo()">display Info</button>
+    <button onclick="showPersonInfo">show Person Info</button>
+</body>
+</html>

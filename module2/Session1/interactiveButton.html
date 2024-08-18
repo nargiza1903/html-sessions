@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Button Project</title>
+    <style>
+        #interactiveButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button id="interactiveButton">Hover over me and click me!</button>
+    <script>
+        const interactiveButton = document.getElementById('interactiveButton');
+        interactiveButton.addEventListener('mouseover', function() {
+            interactiveButton.style.backgroundColor = 'green';
+        });
+        interactiveButton.addEventListener('mouseout', function() {
+            interactiveButton.style.backgroundColor = '';
+        });
+        interactiveButton.addEventListener('click', function() {
+            interactiveButton.textContent = 'Clicked!';
+        });
+    </script>
+</body> 
+</html>       
