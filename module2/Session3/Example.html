@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        /*Basicstylingfor the gallery*/
+        #main-image {
+            width: 600px;
+            height:400px;
+            border: 2px solid #ddd;
+        }
+        .thumbnail {
+            width: 100px;
+            height: 75px;
+            margin: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Clickable Image Gallery</h1>
+    <div>
+        <img id="main-image" src="../img/dragon.webp" alt="Main Image">
+    </div>
+    <div>
+        <img class="thumbnail" src="../img/dr.jpg" alt="Thumbnail 1">
+        <img class="thumbnail" src="../img/drag.jpg" alt="Thumbnail 2">
+        <img class="thumbnail" src="../img/dra.jpg" alt="Thumbnail 3">
+        <img class="thumbnail" src="../img/drago.jpg" alt="thumbnail 4">
+    </div>
+    <script src="script.js">
+    document.addEventListener('DOMContentLoaded', () => {
+        const mainImage = document.getElementById('main-image');
+        const thumbnails = document.querySelectorAll('.thumbnail');
+
+        thumbnail.forEach(thumbnail => {
+            thumbnail.addEventListener('click', () => {
+                mainImage.src = thumbnail.src;
+            });
+        });
+    });
+    </Script>
+</body>
+</html>

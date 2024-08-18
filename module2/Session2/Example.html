@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>DOM Manipulation</title>
+    <title>DOM Example</title>
 </head>    
 <body>
-    <p id="textParagraph">Click the button to change this text.</p>
+    <p id="myParagraph">Hello, world!</p>
     <button id="changeTextButton">Change Text</button>
     <script>
-        const paragraph = document.getElementById('textParagraph');
+        const paragraph = document.getElementById('myParagraph');
         const button = document.getElementById('changeTextButton');
         button.addEventListener('click', function() {
-            paragraph.textContent = 'The text has beenn Changed!';  
-              });
+            paragraph.textContent = 'Text changed!';
+        });
     </script>
 </body>
 </html>

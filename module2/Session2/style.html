@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Change Text Color</title>
+</head>  
+<body>
+    <p id="colorParagraph">Click the button to change my color.</p>
+    <button id="changeColorButton">Change Color</button>
+    <script>
+        const colorPargraph = document.getElementById('colorParagraph');
+        const colorButton = document.getElementById('changeColorButton');
+        colorButton.addEventListener('click', function() {
+            colorParagraph.style.color = 'blue';
+        });
+    </script>
+</body>  
+</html>

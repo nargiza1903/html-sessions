@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Webpage Project</title>
+    <style>
+        #dynamicParagraph {
+            font-size: 18px;
+        }
+    </style>
+</head>    
+<body>
+    <p id="dynamicParagraph">Click the buttons to interact with me!</p>
+    <button id="changeTextButton">Change Text</button>
+    <button id="changeColorButton">Change Color</button>
+    <script>
+        const dynamicParagraph = document.getElementById('dynamicParagraph');
+        const textButton = document.getElementById('changeTextButton');
+        const colorButton= document.getElementById('changeColorButton');
+        textButton.addEventListener('click', function() {
+            dynamicParagraph.textContent = 'The text has been changed!';
+        });
+        colorButton.addEventListener('click', function() {
+            dynamicParagraph.style.color = 'green';
+        });
+    </script>
+</body>
+</html>

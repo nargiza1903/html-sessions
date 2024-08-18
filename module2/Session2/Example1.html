@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Change Content Example</title>
+</head>    
+<body>
+    <p id="myParagraph">This is some text.</p>
+    <button id="changeContentButton">Change Content</button>
+    <script>
+        const paragraph = document.getElementById('myParagraph');
+        const button = document.getElementById('changeContentButton');
+        button.addEventListener('click', function() {
+            paragraph.textContent = 'Content has been changed!';
+        });
+    </script>
+</body>
+</html>
