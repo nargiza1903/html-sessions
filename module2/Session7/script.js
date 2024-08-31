@@ -1,6 +1,6 @@
 let randomNumber = Math.floor(Math.random() * 100) + 1;
 let attempts = 0;
-let maxAttempts = 5;
+let maxAttempts = 3;
 
 function guessNumber() {
     let guess = document.getElementById("guessInput").value;
