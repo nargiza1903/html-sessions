@@ -11,6 +11,6 @@ function guessNumber() {
     } else if (guess > randomNumber) {
         result.textContent = `Too high! Attempts: ${attempts}`;
     } else {
-        result.textContent = `Correct! You guessed the number!`;
+        result.textContent = `Correct! You guessed the number! Hello!`;
     }
 }
