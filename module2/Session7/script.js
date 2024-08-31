@@ -10,6 +10,6 @@ function guessNumber() {
     } else if (guess > randomNumber) {
         result.textContent = "Too high!";
     } else {
-        result.textContent = "Correct! Youguessed the number!";
+        result.textContent = "Correct! You guessed the number!";
     }
 }
